@@ -1,0 +1,207 @@
+﻿body
+{
+    font-size: 12px;
+    color: #000000;
+    margin: 2px auto;
+    display: block;
+    width: 1000px;
+    line-height: 22px;
+    background: url(/Content/Image/bg3.jpg);
+}
+div
+{
+    background-color: #ffffff;
+}
+.field-validation-error
+{
+    color: Red;
+    margin-left: 5px;
+    font-size: 12px;
+}
+.log
+{
+    height: 132px;
+    background: url(/Content/Logo/Logo.jpg);
+}
+.navigation
+{
+    margin: 8px 0 10px 150px;
+    text-align: center;
+    border:1px;
+}
+.Default
+{
+    clear: both;
+}
+.FAQ
+{
+    color: #666666;
+    clear: both;
+}
+.FAQ .title
+{
+    font-weight: bold;
+    border-bottom: 1px solid #999999;
+    margin-bottom: 4px;
+}
+.FAQ .content
+{
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.ContactUs
+{
+    clear: both;
+}
+.ContactUs .text
+{
+    width: 150px;
+}
+a.anavigation:link
+{
+    color: #b5b5b5;
+    text-decoration: none;
+    z-index: 999999;
+    font-size: 12px;
+    font-weight: normal;
+}
+a.anavigation:visited
+{
+    color: #b5b5b5;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: normal;
+}
+a.anavigation:hover
+{
+    color: #666666;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: normal;
+}
+a.anavigation:active
+{
+    color: #666666;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: normal;
+}
+a.lianavigation:link
+{
+    color: #b5b5b5;
+    text-decoration: none;
+    background-color: #d7ebee;
+    padding: 1px 8px 1px 8px;
+    width: 120px;
+    font-size: 12px;
+    font-weight: normal;
+}
+a.lianavigation:visited
+{
+    font-size: 13px;
+    color: #b5b5b5;
+    text-decoration: none;
+    background-color: #d7ebee;
+    padding: 1px 8px 1px 8px;
+    width: 120px;
+    font-size: 12px;
+    font-weight: normal;
+}
+a.lianavigation:hover
+{
+    color: #666666;
+    text-decoration: none;
+    background-color: #d7ebee;
+    padding: 1px 8px 1px 8px;
+    width: 120px;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+/* 顶层列表的样式*/.navigation ul
+{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+/* 顶层列表*/
+.navigation ul li
+{
+    position: relative;
+    display: inline;
+    float: left;
+    background-color: #ffffff;
+    margin-right: 50px;
+}
+
+/*顶层列表的链接样式*/
+.navigation ul li a
+{
+    display: block;
+    text-decoration: none;
+    color: #b5b5b5;
+}
+
+.navigation ul li a:hover
+{
+    color: #666666;
+    text-decoration: none;
+}
+
+/*1级列表菜单的样式*/
+.navigation ul li ul
+{
+    margin-left: 0px;
+    position: absolute;
+    display: block;
+    visibility: hidden;
+}
+
+/*1级子列表菜单 */
+.navigation ul li ul li
+{
+    display: list-item;
+    float: none;
+    margin-right: 0;
+    text-align: left;
+}
+a:active
+{
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    font-size: 16px;
+}
+a:link
+{
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    font-size: 16px;
+}
+a:visited
+{
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    font-size: 16px;
+}
+a:hover
+{
+    text-decoration: underline;
+    color: red;
+    font-weight: bold;
+    font-size: 16px;
+}
+.article_detail
+{
+    color: #666666;
+    padding-left: 5px;
+}
+.webBottom
+{
+    border: 1px solid #cccccc;
+    padding: 10px;
+    text-align: center;
+}

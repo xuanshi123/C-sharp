@@ -1,0 +1,121 @@
+﻿<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link href="/Content/Style.css" rel="stylesheet" type="text/css" />
+    <link href="/Content/banner.css" rel="stylesheet" type="text/css" />
+    <script src="/Scripts/yu.js" type="text/javascript"></script>
+    <script src="/Scripts/tb.js" type="text/javascript"></script>
+    <script src="/Scripts/topnav.js" type="text/javascript"></script>
+    <title>
+        <asp:ContentPlaceHolder ID="TitleContent" runat="server" />
+    </title>
+    <script type="text/javascript">
+        function shouchang() {
+            window.external.AddFavorite("http://www.babyisart.com/", '<%:ViewData["WebTitle"] %>')
+        }
+        var menuids = ["menu1"]
+        // 定义主函数
+        function buildsubmenus_horizontal() {
+            for (var i = 0; i < menuids.length; i++) {
+                // 获取指定的DIV容器中的列表元素UL
+                var ultags = document.getElementById(menuids[i]).getElementsByTagName("ul")
+                for (var t = 0; t < ultags.length; t++) {
+                    if (ultags[t].parentNode.parentNode.id == menuids[i]) { // 假如是顶级子菜单列表
+                        ultags[t].style.top = ultags[t].parentNode.offsetHeight + "px" //则设置它的位置
+                        // 定义类名，套用CSS样式
+                        ultags[t].parentNode.getElementsByTagName("a")[0].className = "mainfoldericon"
+                    }
+                    else { //假如是子菜单列表(ul)
+                        ultags[t].style.left = ultags[t - 1].getElementsByTagName("a")[0].offsetWidth + "px" //则设置它的位置
+                        // 定义类名，套用CSS样式
+                        ultags[t].parentNode.getElementsByTagName("a")[0].className = "subfoldericon"
+                    }
+                    // 定义鼠标事件函数
+                    ultags[t].parentNode.onmouseover = function () {
+                        // 鼠标移上去时显示其子列表
+                        this.getElementsByTagName("ul")[0].style.visibility = "visible"
+                    }
+                    // 鼠标移开时将其隐藏
+                    ultags[t].parentNode.onmouseout = function () {
+                        this.getElementsByTagName("ul")[0].style.visibility = "hidden"
+                    }
+                }
+            }
+        }
+        // 添加页面事件
+        if (window.addEventListener)
+            window.addEventListener("load", buildsubmenus_horizontal, false)
+        // attachEvent 方法监视页面中的事件
+        else if (window.attachEvent)
+            window.attachEvent("onload", buildsubmenus_horizontal)
+    </script>
+</head>
+<body>
+    <script src="/Scripts/yu.js" type="text/javascript"></script>
+    <script src="/Scripts/tb.js" type="text/javascript"></script>
+    <div style="background-color: #ffffff">
+        <img src="/Content/Logo/logo.gif" alt="" />
+        <div class="navigation">
+            <ul id="menu1">
+                <li>
+                    <%: Html.ActionLink("HOME首页", "/Default", "Home", null, new { @class = "anavigation" })%></li>
+                <li style="z-index: 20000"><a class="anavigation" style="color: #b5b5b5; text-decoration: none;
+                    font-size: 12px; font-weight: normal;">CATEGORIES分类</a>
+                    <ul>
+                        <%System.Data.DataTable dt_categories = ViewData["CategoriesList"] as System.Data.DataTable; %>
+                        <%foreach (System.Data.DataRow dr in dt_categories.Rows)
+                          {%>
+                        <li style="z-index: 20000">
+                            <%:Html.ActionLink(dr["CatalogName"].ToString(), "Default/" + dr["ID"].ToString(), "Home", null, new { @class = "lianavigation" })%></li>
+                        <%} %>
+                    </ul>
+                </li>
+                <li>
+                    <%: Html.ActionLink("FAQ常见问题", "FAQ", "Home", null, new { @class = "anavigation" })%></li>
+                <li style="z-index: 20000"><a class="anavigation" style="color: #b5b5b5; text-decoration: none;
+                    font-size: 12px; font-weight: normal;">SPONSORS赞助商</a>
+                    <ul>
+                        <%System.Data.DataTable dt = ViewData["SupplierList"] as System.Data.DataTable; %>
+                        <%foreach (System.Data.DataRow dr in dt.Rows)
+                          {%>
+                        <li style="z-index: 20000"><a href="<%:dr["SupplierUrl"].ToString() %>" class="lianavigation"
+                            target="_blank">
+                            <%:dr["SupplierName"].ToString()%></a></li>
+                        <%} %>
+                    </ul>
+                </li>
+                <li>
+                    <%: Html.ActionLink("CONTACT US联系我们", "ContactUs", "Home", null, new { @class = "anavigation" })%></li>
+            </ul>
+        </div>
+        <div style="clear: both">
+        </div>
+        <div id="MainPromotionBanner">
+            <div id="SlidePlayer">
+                <ul class="Slides">
+                    <li><a target="_blank" href="/Content/Logo/1.gif">
+                        <img src="/Content/Logo/1.gif" width="1000px" height="350"></a></li>
+                    <li><a target="_blank" href="/Content/Logo/2.gif">
+                        <img src="/Content/Logo/2.gif" width="1000px" height="350"></a></li>
+                    <li><a target="_blank" href="/Content/Logo/3.gif">
+                        <img src="/Content/Logo/3.gif" width="1000px" height="350"></a></li>
+                    <li><a target="_blank" href="/Content/Logo/4.gif">
+                        <img src="/Content/Logo/4.gif" width="1000px" height="350"></a></li>
+                </ul>
+            </div>
+            <script type="text/javascript">
+                TB.widget.SimpleSlide.decoration('SlidePlayer', { eventType: 'mouse', effect: 'scroll' });
+            </script>
+        </div>
+        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+        </asp:ContentPlaceHolder>
+        <div style="clear: both">
+        </div>
+        <div class="webBottom">
+            <%=ViewData["WebBottom"].ToString() %>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,621 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6CA54617-EE99-4059-889F-BFBA185AB0E0}</ProjectGuid>
+    <ProjectTypeGuids>{F85E285D-A4E0-4152-9332-AB1D724D3325};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MvcWebPhoto</RootNamespace>
+    <AssemblyName>MvcWebPhoto</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceModel.Activities" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\ControllersUtility.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="DAL\Article.cs" />
+    <Compile Include="DAL\Catalog.cs" />
+    <Compile Include="DAL\Comment.cs" />
+    <Compile Include="DAL\ContactUs.cs" />
+    <Compile Include="DAL\DBUtility.cs" />
+    <Compile Include="DAL\FAQ.cs" />
+    <Compile Include="DAL\Supplier.cs" />
+    <Compile Include="DAL\SysManage.cs" />
+    <Compile Include="DAL\User.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Business\Article.cs" />
+    <Compile Include="Models\Business\Catalog.cs" />
+    <Compile Include="Models\Business\Comment.cs" />
+    <Compile Include="Models\Business\ContactUs.cs" />
+    <Compile Include="Models\Business\FAQ.cs" />
+    <Compile Include="Models\Business\Supplier.cs" />
+    <Compile Include="Models\Business\SysManage.cs" />
+    <Compile Include="Models\Business\User.cs" />
+    <Compile Include="Models\Entities\Article.cs" />
+    <Compile Include="Models\Entities\Catalog.cs" />
+    <Compile Include="Models\Entities\Comment.cs" />
+    <Compile Include="Models\Entities\ContactUs.cs" />
+    <Compile Include="Models\Entities\EmailAccounts.cs" />
+    <Compile Include="Models\Entities\FAQ.cs" />
+    <Compile Include="Models\Entities\Supplier.cs" />
+    <Compile Include="Models\Entities\SysManage.cs" />
+    <Compile Include="Models\Entities\User.cs" />
+    <Compile Include="Models\Interfaces\IComment.cs" />
+    <Compile Include="Models\Interfaces\IContactUs.cs" />
+    <Compile Include="Models\Interfaces\IArticle.cs" />
+    <Compile Include="Models\Interfaces\ICatalog.cs" />
+    <Compile Include="Models\Interfaces\IFAQ.cs" />
+    <Compile Include="Models\Interfaces\ISupplier.cs" />
+    <Compile Include="Models\Interfaces\ISysManage.cs" />
+    <Compile Include="Models\Interfaces\IUser.cs" />
+    <Compile Include="Models\ServerBuilder.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\wyq.mdb" />
+    <Content Include="Content\Image\bady.jpg" />
+    <Content Include="Content\Image\bg.png" />
+    <Content Include="Content\Image\bg3.jpg" />
+    <Content Include="Content\Image\bo.gif" />
+    <Content Include="Content\Image\gif-0162.gif" />
+    <Content Include="Content\Image\jz.png" />
+    <Content Include="Content\Image\pl.jpg" />
+    <Content Include="Content\Image\sprites.gif" />
+    <Content Include="Content\Image\titleBG.gif" />
+    <Content Include="Content\Image\topbg.jpg" />
+    <Content Include="Content\Image\yd.jpg" />
+    <Content Include="Content\Style.css" />
+    <Content Include="Global.asax" />
+    <Content Include="eWebEditor\buttonimage\blue\about.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\abspos.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\anchor.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\art.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\backcolor.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\backward.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\bgcolor.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\bgpic.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\blink.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\bold.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\br.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\checked.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\code.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\componentmenu.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\copy.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\createlink.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\css.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\cut.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\date.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\delete.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\editmenu.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\emot.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\eq.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\excel.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\fieldset.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\file.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\filemenu.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\findreplace.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\flash.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\fontmenu.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\forecolor.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\formbutton.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\formcheckbox.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\formdropdown.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\formmenu.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\formradio.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\formtext.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\formtextarea.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\forward.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\help.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\iframe.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\img.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\indent.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\inserthorizontalrule.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\insertorderedlist.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\insertparagraph.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\insertunorderedlist.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\italic.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\justifycenter.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\justifyfull.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\justifyleft.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\justifyright.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\lcase.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\map.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\marquee.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\maximize.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\media.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\minimize.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\modecode.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\modecodebtn.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\modeedit.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\modeeditbtn.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\modetext.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\modetextbtn.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\modeview.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\modeviewbtn.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\msn.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\objectmenu.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\outdent.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\paint.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\paragraph.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\paragraphmenu.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\paste.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\pastetext.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\pasteword.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\print.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\quote.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\redo.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\refresh.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\removeformat.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\save.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\selectall.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\showborders.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\showdetails.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\site.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\sizeminus.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\sizeplus.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\space.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\strikethrough.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\subscript.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\superscript.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\symbol.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\tablecellprop.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\tablecellsplit.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\tablecoldelete.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\tablecolinsertleft.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\tablecolinsertright.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\tablecolmerge.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\tablecolsplit.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\tableinsert.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\tablemenu.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\tableprop.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\tablerowdelete.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\tablerowinsertabove.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\tablerowinsertbelow.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\tablerowmerge.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\tablerowprop.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\tablerowsplit.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\template.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\time.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\tobig.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\toolmenu.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\tosmall.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\ucase.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\underline.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\undo.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\unlink.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\unselect.gif" />
+    <Content Include="eWebEditor\buttonimage\blue\zoommenu.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\about.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\abspos.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\anchor.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\art.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\backcolor.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\backward.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\bgcolor.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\bgpic.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\blink.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\bold.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\br.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\checked.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\code.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\componentmenu.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\copy.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\createlink.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\css.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\cut.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\date.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\delete.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\editmenu.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\emot.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\eq.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\excel.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\fieldset.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\file.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\filemenu.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\findreplace.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\flash.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\fontmenu.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\forecolor.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\formbutton.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\formcheckbox.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\formdropdown.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\formmenu.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\formradio.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\formtext.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\formtextarea.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\forward.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\help.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\iframe.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\img.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\indent.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\inserthorizontalrule.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\insertorderedlist.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\insertparagraph.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\insertunorderedlist.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\italic.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\justifycenter.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\justifyfull.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\justifyleft.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\justifyright.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\lcase.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\map.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\marquee.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\maximize.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\media.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\minimize.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\modecode.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\modecodebtn.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\modeedit.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\modeeditbtn.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\modetext.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\modetextbtn.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\modeview.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\modeviewbtn.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\msn.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\objectmenu.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\outdent.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\paint.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\paragraph.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\paragraphmenu.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\paste.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\pastetext.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\pasteword.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\print.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\quote.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\redo.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\refresh.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\removeformat.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\save.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\selectall.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\showborders.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\showdetails.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\site.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\sizeminus.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\sizeplus.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\space.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\strikethrough.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\subscript.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\superscript.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\symbol.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\tablecellprop.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\tablecellsplit.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\tablecoldelete.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\tablecolinsertleft.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\tablecolinsertright.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\tablecolmerge.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\tablecolsplit.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\tableinsert.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\tablemenu.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\tableprop.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\tablerowdelete.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\tablerowinsertabove.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\tablerowinsertbelow.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\tablerowmerge.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\tablerowprop.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\tablerowsplit.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\template.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\time.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\tobig.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\toolmenu.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\tosmall.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\ucase.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\underline.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\undo.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\unlink.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\unselect.gif" />
+    <Content Include="eWebEditor\buttonimage\gray\zoommenu.gif" />
+    <Content Include="eWebEditor\css\blue\editor.css" />
+    <Content Include="eWebEditor\css\blue\editorarea.css" />
+    <Content Include="eWebEditor\css\blue\menuarea.css" />
+    <Content Include="eWebEditor\css\coolblue\editor.css" />
+    <Content Include="eWebEditor\css\coolblue\editorarea.css" />
+    <Content Include="eWebEditor\css\coolblue\menuarea.css" />
+    <Content Include="eWebEditor\css\coolblue\tbhandle.gif" />
+    <Content Include="eWebEditor\css\coolblue\toolbarbg.gif" />
+    <Content Include="eWebEditor\css\coolblue\toolbarleft.gif" />
+    <Content Include="eWebEditor\css\coolblue\toolbarright.gif" />
+    <Content Include="eWebEditor\css\green\editor.css" />
+    <Content Include="eWebEditor\css\green\editorarea.css" />
+    <Content Include="eWebEditor\css\green\menuarea.css" />
+    <Content Include="eWebEditor\css\light\editor.css" />
+    <Content Include="eWebEditor\css\light\editorarea.css" />
+    <Content Include="eWebEditor\css\light\menuarea.css" />
+    <Content Include="eWebEditor\css\mx\editor.css" />
+    <Content Include="eWebEditor\css\mx\editorarea.css" />
+    <Content Include="eWebEditor\css\mx\menuarea.css" />
+    <Content Include="eWebEditor\css\office3d\editor.css" />
+    <Content Include="eWebEditor\css\office3d\editorarea.css" />
+    <Content Include="eWebEditor\css\office3d\menuarea.css" />
+    <Content Include="eWebEditor\css\office\editor.css" />
+    <Content Include="eWebEditor\css\office\editorarea.css" />
+    <Content Include="eWebEditor\css\office\menuarea.css" />
+    <Content Include="eWebEditor\css\red\editor.css" />
+    <Content Include="eWebEditor\css\red\editorarea.css" />
+    <Content Include="eWebEditor\css\red\menuarea.css" />
+    <Content Include="eWebEditor\css\yellow\editor.css" />
+    <Content Include="eWebEditor\css\yellow\editorarea.css" />
+    <Content Include="eWebEditor\css\yellow\menuarea.css" />
+    <Content Include="eWebEditor\dialog\about.htm" />
+    <Content Include="eWebEditor\dialog\anchor.htm" />
+    <Content Include="eWebEditor\dialog\art.htm" />
+    <Content Include="eWebEditor\dialog\backimage.htm" />
+    <Content Include="eWebEditor\dialog\dialog.css" />
+    <Content Include="eWebEditor\dialog\dialog.js" />
+    <Content Include="eWebEditor\dialog\emot.htm" />
+    <Content Include="eWebEditor\dialog\fieldset.htm" />
+    <Content Include="eWebEditor\dialog\file.htm" />
+    <Content Include="eWebEditor\dialog\findreplace.htm" />
+    <Content Include="eWebEditor\dialog\flash.htm" />
+    <Content Include="eWebEditor\dialog\fullscreen.htm" />
+    <Content Include="eWebEditor\dialog\hyperlink.htm" />
+    <Content Include="eWebEditor\dialog\iframe.htm" />
+    <Content Include="eWebEditor\dialog\img.htm" />
+    <Content Include="eWebEditor\dialog\map.htm" />
+    <Content Include="eWebEditor\dialog\marquee.htm" />
+    <Content Include="eWebEditor\dialog\media.htm" />
+    <Content Include="eWebEditor\dialog\paragraph.htm" />
+    <Content Include="eWebEditor\dialog\selcolor.htm" />
+    <Content Include="eWebEditor\dialog\symbol.htm" />
+    <Content Include="eWebEditor\dialog\table.htm" />
+    <Content Include="eWebEditor\dialog\tablecell.htm" />
+    <Content Include="eWebEditor\dialog\tablecellsplit.htm" />
+    <Content Include="eWebEditor\ewebeditor.htm" />
+    <Content Include="eWebEditor\js\editor.js" />
+    <Content Include="eWebEditor\js\lang.js" />
+    <Content Include="eWebEditor\js\main.js" />
+    <Content Include="eWebEditor\js\menu.js" />
+    <Content Include="eWebEditor\js\table.js" />
+    <Content Include="eWebEditor\popup.htm" />
+    <Content Include="eWebEditor\style\3d.js" />
+    <Content Include="eWebEditor\style\blue.js" />
+    <Content Include="eWebEditor\style\coolblue.js" />
+    <Content Include="eWebEditor\style\gray.js" />
+    <Content Include="eWebEditor\style\green.js" />
+    <Content Include="eWebEditor\style\light.js" />
+    <Content Include="eWebEditor\style\mini.js" />
+    <Content Include="eWebEditor\style\popup.js" />
+    <Content Include="eWebEditor\style\red.js" />
+    <Content Include="eWebEditor\style\yellow.js" />
+    <Content Include="eWebEditor\sysimage\actualsize.gif" />
+    <Content Include="eWebEditor\sysimage\bestfit.gif" />
+    <Content Include="eWebEditor\sysimage\bg\birthday.gif" />
+    <Content Include="eWebEditor\sysimage\bg\christmas.gif" />
+    <Content Include="eWebEditor\sysimage\bg\citrus.gif" />
+    <Content Include="eWebEditor\sysimage\bg\clear.jpg" />
+    <Content Include="eWebEditor\sysimage\bg\fiesta.jpg" />
+    <Content Include="eWebEditor\sysimage\bg\flower.gif" />
+    <Content Include="eWebEditor\sysimage\bg\gathering.jpg" />
+    <Content Include="eWebEditor\sysimage\bg\glacier.jpg" />
+    <Content Include="eWebEditor\sysimage\bg\grid.gif" />
+    <Content Include="eWebEditor\sysimage\bg\hearts.gif" />
+    <Content Include="eWebEditor\sysimage\bg\ivy.gif" />
+    <Content Include="eWebEditor\sysimage\bg\maize.jpg" />
+    <Content Include="eWebEditor\sysimage\bg\nature.jpg" />
+    <Content Include="eWebEditor\sysimage\bg\snow.gif" />
+    <Content Include="eWebEditor\sysimage\bg\tech.gif" />
+    <Content Include="eWebEditor\sysimage\contextmenu.gif" />
+    <Content Include="eWebEditor\sysimage\emot\01.gif" />
+    <Content Include="eWebEditor\sysimage\emot\02.gif" />
+    <Content Include="eWebEditor\sysimage\emot\03.gif" />
+    <Content Include="eWebEditor\sysimage\emot\04.gif" />
+    <Content Include="eWebEditor\sysimage\emot\05.gif" />
+    <Content Include="eWebEditor\sysimage\emot\06.gif" />
+    <Content Include="eWebEditor\sysimage\emot\07.gif" />
+    <Content Include="eWebEditor\sysimage\emot\08.gif" />
+    <Content Include="eWebEditor\sysimage\emot\09.gif" />
+    <Content Include="eWebEditor\sysimage\emot\10.gif" />
+    <Content Include="eWebEditor\sysimage\emot\11.gif" />
+    <Content Include="eWebEditor\sysimage\emot\12.gif" />
+    <Content Include="eWebEditor\sysimage\emot\13.gif" />
+    <Content Include="eWebEditor\sysimage\emot\14.gif" />
+    <Content Include="eWebEditor\sysimage\emot\15.gif" />
+    <Content Include="eWebEditor\sysimage\emot\16.gif" />
+    <Content Include="eWebEditor\sysimage\emot\17.gif" />
+    <Content Include="eWebEditor\sysimage\emot\18.gif" />
+    <Content Include="eWebEditor\sysimage\emot\19.gif" />
+    <Content Include="eWebEditor\sysimage\emot\20.gif" />
+    <Content Include="eWebEditor\sysimage\emot\21.gif" />
+    <Content Include="eWebEditor\sysimage\emot\22.gif" />
+    <Content Include="eWebEditor\sysimage\emot\23.gif" />
+    <Content Include="eWebEditor\sysimage\emot\24.gif" />
+    <Content Include="eWebEditor\sysimage\emot\25.gif" />
+    <Content Include="eWebEditor\sysimage\emot\26.gif" />
+    <Content Include="eWebEditor\sysimage\emot\27.gif" />
+    <Content Include="eWebEditor\sysimage\emot\28.gif" />
+    <Content Include="eWebEditor\sysimage\emot\29.gif" />
+    <Content Include="eWebEditor\sysimage\emot\30.gif" />
+    <Content Include="eWebEditor\sysimage\emot\31.gif" />
+    <Content Include="eWebEditor\sysimage\emot\32.gif" />
+    <Content Include="eWebEditor\sysimage\emot\33.gif" />
+    <Content Include="eWebEditor\sysimage\emot\34.gif" />
+    <Content Include="eWebEditor\sysimage\emot\35.gif" />
+    <Content Include="eWebEditor\sysimage\emot\36.gif" />
+    <Content Include="eWebEditor\sysimage\emot\37.gif" />
+    <Content Include="eWebEditor\sysimage\emot\38.gif" />
+    <Content Include="eWebEditor\sysimage\emot\39.gif" />
+    <Content Include="eWebEditor\sysimage\emot\40.gif" />
+    <Content Include="eWebEditor\sysimage\emot\41.gif" />
+    <Content Include="eWebEditor\sysimage\emot\42.gif" />
+    <Content Include="eWebEditor\sysimage\emot\43.gif" />
+    <Content Include="eWebEditor\sysimage\emot\44.gif" />
+    <Content Include="eWebEditor\sysimage\emot\45.gif" />
+    <Content Include="eWebEditor\sysimage\emot\46.gif" />
+    <Content Include="eWebEditor\sysimage\emot\47.gif" />
+    <Content Include="eWebEditor\sysimage\emot\48.gif" />
+    <Content Include="eWebEditor\sysimage\emot\49.gif" />
+    <Content Include="eWebEditor\sysimage\emot\50.gif" />
+    <Content Include="eWebEditor\sysimage\ewebeditor.gif" />
+    <Content Include="eWebEditor\sysimage\file\audio.gif" />
+    <Content Include="eWebEditor\sysimage\file\avi.gif" />
+    <Content Include="eWebEditor\sysimage\file\bmp.gif" />
+    <Content Include="eWebEditor\sysimage\file\closedfolder.gif" />
+    <Content Include="eWebEditor\sysimage\file\code.gif" />
+    <Content Include="eWebEditor\sysimage\file\doc.gif" />
+    <Content Include="eWebEditor\sysimage\file\exe.gif" />
+    <Content Include="eWebEditor\sysimage\file\folder.gif" />
+    <Content Include="eWebEditor\sysimage\file\folderback.gif" />
+    <Content Include="eWebEditor\sysimage\file\gif.gif" />
+    <Content Include="eWebEditor\sysimage\file\hlp.gif" />
+    <Content Include="eWebEditor\sysimage\file\htm.gif" />
+    <Content Include="eWebEditor\sysimage\file\jpg.gif" />
+    <Content Include="eWebEditor\sysimage\file\mdb.gif" />
+    <Content Include="eWebEditor\sysimage\file\mid.gif" />
+    <Content Include="eWebEditor\sysimage\file\mp.gif" />
+    <Content Include="eWebEditor\sysimage\file\mp3.gif" />
+    <Content Include="eWebEditor\sysimage\file\openfolder.gif" />
+    <Content Include="eWebEditor\sysimage\file\parentfolder.gif" />
+    <Content Include="eWebEditor\sysimage\file\pdf.gif" />
+    <Content Include="eWebEditor\sysimage\file\pic.gif" />
+    <Content Include="eWebEditor\sysimage\file\ppt.gif" />
+    <Content Include="eWebEditor\sysimage\file\rar.gif" />
+    <Content Include="eWebEditor\sysimage\file\rm.gif" />
+    <Content Include="eWebEditor\sysimage\file\swf.gif" />
+    <Content Include="eWebEditor\sysimage\file\txt.gif" />
+    <Content Include="eWebEditor\sysimage\file\unknow.gif" />
+    <Content Include="eWebEditor\sysimage\file\xls.gif" />
+    <Content Include="eWebEditor\sysimage\file\zip.gif" />
+    <Content Include="eWebEditor\sysimage\rect.gif" />
+    <Content Include="eWebEditor\sysimage\rectimg.gif" />
+    <Content Include="eWebEditor\sysimage\space.gif" />
+    <Content Include="eWebEditor\sysimage\zoomin.gif" />
+    <Content Include="eWebEditor\sysimage\zoomout.gif" />
+    <Content Include="eWebEditor\_example\clientapi.htm" />
+    <Content Include="eWebEditor\_example\default.htm" />
+    <Content Include="eWebEditor\_example\example.css" />
+    <Content Include="eWebEditor\_example\myeditorarea.css" />
+    <Content Include="eWebEditor\_example\para_extcss.htm" />
+    <Content Include="eWebEditor\_example\popup.htm" />
+    <Content Include="eWebEditor\_example\standard.htm" />
+    <Content Include="Views\Home\Index.aspx" />
+    <Content Include="Views\Manage\ActicleImage.aspx" />
+    <Content Include="Views\Manage\ArticleEdit.aspx" />
+    <Content Include="Views\Manage\ArticleList.aspx" />
+    <Content Include="Views\Manage\CatalogEdit.aspx" />
+    <Content Include="Views\Manage\CatalogList.aspx" />
+    <Content Include="Views\Manage\Default.aspx" />
+    <Content Include="Views\Manage\EmailAccounts.aspx" />
+    <Content Include="Views\Manage\FAQEdit.aspx" />
+    <Content Include="Views\Manage\FAQList.aspx" />
+    <Content Include="Views\Manage\Login.aspx" />
+    <Content Include="Views\Manage\Logo.aspx" />
+    <Content Include="Views\Manage\SupplierEdit.aspx" />
+    <Content Include="Views\Manage\SupplierList.aspx" />
+    <Content Include="Views\Manage\SysManage.aspx" />
+    <Content Include="Views\Shared\ArticleDetail.aspx" />
+    <Content Include="Views\Shared\ContactUs.aspx" />
+    <Content Include="Views\Shared\Default.aspx" />
+    <Content Include="Views\Shared\FAQ.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Content\ManageSite.css" />
+    <Content Include="Views\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Content\ActicleImage\" />
+    <Folder Include="Content\Logo\" />
+    <Folder Include="Scripts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Manage\ManageSite.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\ViewMasterPage.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Manage\ViewMasterPageEdit.Master" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target> -->
+  <Target Name="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(ProjectDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>3923</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

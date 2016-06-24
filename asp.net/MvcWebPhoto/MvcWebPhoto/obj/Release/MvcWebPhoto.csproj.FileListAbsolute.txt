@@ -1,0 +1,10 @@
+E:\MvcWebPhoto\MvcWebPhoto\bin\MvcWebPhoto.dll
+E:\MvcWebPhoto\MvcWebPhoto\bin\MvcWebPhoto.pdb
+E:\MvcWebPhoto\MvcWebPhoto\obj\Release\ResolveAssemblyReference.cache
+E:\MvcWebPhoto\MvcWebPhoto\obj\Release\MvcWebPhoto.dll
+E:\MvcWebPhoto\MvcWebPhoto\obj\Release\MvcWebPhoto.pdb
+F:\TDDOWNLOAD\MvcWebPhoto\MvcWebPhoto\bin\MvcWebPhoto.dll
+F:\TDDOWNLOAD\MvcWebPhoto\MvcWebPhoto\bin\MvcWebPhoto.pdb
+F:\TDDOWNLOAD\MvcWebPhoto\MvcWebPhoto\obj\Release\ResolveAssemblyReference.cache
+F:\TDDOWNLOAD\MvcWebPhoto\MvcWebPhoto\obj\Release\MvcWebPhoto.dll
+F:\TDDOWNLOAD\MvcWebPhoto\MvcWebPhoto\obj\Release\MvcWebPhoto.pdb

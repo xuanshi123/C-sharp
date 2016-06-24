@@ -1,0 +1,55 @@
+﻿<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link href="/Content/ManageSite.css" rel="stylesheet" type="text/css" />
+    <title>
+        <%:ViewData["WebTitle"].ToString() %>--后台管理 </title>
+</head>
+<body>
+    <div class="top">
+        <h1>
+            <%:Html.Label(ViewData["WebTitle"].ToString()) %></h1>
+    </div>
+    <div class="navigation">
+        <div class="navigation_title">
+            管理菜单
+        </div>
+        <ul>
+            <li>
+                <%:Html.ActionLink("前台首页", "Default", "Home", "Default", new { target = "_blank" })%></li>
+            <li>
+                <%:Html.ActionLink("后台首页", "Default")%></li>
+            <br />
+            <span style="margin-left: -32px;">---------------------------------</span>
+            <br />
+            <li>
+                <%:Html.ActionLink("分类管理", "CatalogList")%></li>
+            <li>
+                <%:Html.ActionLink("文章管理", "ArticleList")%></li>
+            <li>
+                <%:Html.ActionLink("赞助商管理", "SupplierList")%></li>
+            <li>
+                <%:Html.ActionLink("FAQ管理", "FAQList")%></li>                
+            <li>
+                <%:Html.ActionLink("网站幻灯片管理", "Logo")%></li>
+            <li>
+                <%:Html.ActionLink("网站标题管理", "SysManage/1")%></li>
+            <li>
+                <%:Html.ActionLink("网站尾部声明管理", "SysManage/2")%></li>
+            <li>
+                <%:Html.ActionLink("邮箱设置", "EmailAccounts")%></li>
+        </ul>
+    </div>
+    <div class="nav_content">
+        <div class="nav_content_title">
+            <%:Html.ActionLink("新增",ViewData[MvcWebPhoto.Controllers.ControllersUtility.Add_Url].ToString())%>
+        </div>
+        <div class="nav_content_content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+</body>
+</html>

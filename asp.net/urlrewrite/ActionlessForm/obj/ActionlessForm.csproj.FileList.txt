@@ -1,0 +1,5 @@
+bin\Debug\ActionlessForm.dll
+bin\Debug\ActionlessForm.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\ActionlessForm.dll
+obj\Debug\ActionlessForm.pdb

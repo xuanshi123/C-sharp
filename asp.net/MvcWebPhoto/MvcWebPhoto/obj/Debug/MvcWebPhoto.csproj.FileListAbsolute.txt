@@ -1,0 +1,10 @@
+E:\personal\MvcWebPhoto\MvcWebPhoto\bin\MvcWebPhoto.dll
+E:\personal\MvcWebPhoto\MvcWebPhoto\bin\MvcWebPhoto.pdb
+E:\personal\MvcWebPhoto\MvcWebPhoto\obj\Debug\ResolveAssemblyReference.cache
+E:\personal\MvcWebPhoto\MvcWebPhoto\obj\Debug\MvcWebPhoto.dll
+E:\personal\MvcWebPhoto\MvcWebPhoto\obj\Debug\MvcWebPhoto.pdb
+E:\MvcWebPhoto\MvcWebPhoto\bin\MvcWebPhoto.dll
+E:\MvcWebPhoto\MvcWebPhoto\bin\MvcWebPhoto.pdb
+E:\MvcWebPhoto\MvcWebPhoto\obj\Debug\ResolveAssemblyReference.cache
+E:\MvcWebPhoto\MvcWebPhoto\obj\Debug\MvcWebPhoto.dll
+E:\MvcWebPhoto\MvcWebPhoto\obj\Debug\MvcWebPhoto.pdb
