@@ -1,0 +1,5 @@
+c:\users\terry\documents\visual studio 2013\Projects\ConsoleApplication3\ConsoleApplication3\bin\Release\ConsoleApplication3.exe
+c:\users\terry\documents\visual studio 2013\Projects\ConsoleApplication3\ConsoleApplication3\bin\Release\ConsoleApplication3.pdb
+c:\users\terry\documents\visual studio 2013\Projects\ConsoleApplication3\ConsoleApplication3\obj\Release\ConsoleApplication3.exe
+c:\users\terry\documents\visual studio 2013\Projects\ConsoleApplication3\ConsoleApplication3\obj\Release\ConsoleApplication3.pdb
+C:\Users\terry\Documents\Visual Studio 2013\Projects\ConsoleApplication3\ConsoleApplication3\obj\Release\ConsoleApplication3.csprojResolveAssemblyReference.cache

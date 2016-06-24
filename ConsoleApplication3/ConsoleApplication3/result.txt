@@ -1,0 +1,230 @@
+Output Key : rt, Value : 307 
+Output Key : hapy, Value : 170 
+Output Key : birthday, Value : 170 
+Output Key : day, Value : 80 
+Output Key : hope, Value : 62 
+Output Key : god, Value : 57 
+Output Key : thanks, Value : 55 
+Output Key : thank, Value : 54 
+Output Key : mis, Value : 49 
+Output Key : love, Value : 44 
+Total number of words in dictionary U1: 946
+
+
+Output Key : phone, Value : 854 
+Output Key : unlocked, Value : 828 
+Output Key : samsung, Value : 321 
+Output Key : phones, Value : 314 
+Output Key : android, Value : 307 
+Output Key : prepaid, Value : 272 
+Output Key : camera, Value : 245 
+Output Key : black, Value : 203 
+Output Key : mobile, Value : 173 
+Output Key : gsm, Value : 173 
+Total number of words in dictionary U2: 1082
+
+
+Output Key : rt, Value : 202 
+Output Key : u, Value : 60 
+Output Key : dad, Value : 34 
+Output Key : out, Value : 26 
+Output Key : god, Value : 21 
+Output Key : pictures, Value : 20 
+Output Key : quote, Value : 19 
+Output Key : love, Value : 19 
+Output Key : fel, Value : 18 
+Output Key : shit, Value : 17 
+Total number of words in dictionary U3: 1419
+
+
+Output Key : mobistealth, Value : 180 
+Output Key : tutor, Value : 106 
+Output Key : spy, Value : 105 
+Output Key : software, Value : 104 
+Output Key : phone, Value : 97 
+Output Key : mobile, Value : 89 
+Output Key : name, Value : 83 
+Output Key : ca, Value : 72 
+Output Key : years, Value : 68 
+Output Key : ny, Value : 54 
+Total number of words in dictionary U4: 2180
+
+
+Output Key : rt, Value : 49 
+Output Key : want, Value : 8 
+Output Key : photo, Value : 7 
+Output Key : go, Value : 6 
+Output Key : breath, Value : 6 
+Output Key : up, Value : 5 
+Output Key : one, Value : 5 
+Output Key : hey, Value : 5 
+Output Key : time, Value : 4 
+Output Key : show, Value : 4 
+Total number of words in dictionary U5: 490
+
+
+Output Key : rt, Value : 2 
+Output Key : worth, Value : 1 
+Output Key : worse, Value : 1 
+Output Key : victoria, Value : 1 
+Output Key : tour, Value : 1 
+Output Key : tonight, Value : 1 
+Output Key : taken, Value : 1 
+Output Key : take, Value : 1 
+Output Key : suck, Value : 1 
+Output Key : strangle, Value : 1 
+Total number of words in dictionary U6: 49
+
+
+Output Key : cat, Value : 5 
+Output Key : up, Value : 3 
+Output Key : think, Value : 3 
+Output Key : rt, Value : 3 
+Output Key : re, Value : 3 
+Output Key : god, Value : 3 
+Output Key : um, Value : 2 
+Output Key : u, Value : 2 
+Output Key : thing, Value : 2 
+Output Key : piza, Value : 2 
+Total number of words in dictionary U7: 206
+
+
+Output Key : gogletwets, Value : 636 
+Output Key : new, Value : 633 
+Output Key : post, Value : 498 
+Output Key : aded, Value : 495 
+Output Key : phone, Value : 150 
+Output Key : yourtube, Value : 149 
+Output Key : health, Value : 148 
+Output Key : black, Value : 134 
+Output Key : video, Value : 125 
+Output Key : mobile, Value : 109 
+Total number of words in dictionary U8: 6535
+
+
+Output Key : rt, Value : 40 
+Output Key : data, Value : 33 
+Output Key : plan, Value : 16 
+Output Key : use, Value : 15 
+Output Key : more, Value : 13 
+Output Key : smartphone, Value : 11 
+Output Key : up, Value : 10 
+Output Key : chat, Value : 9 
+Output Key : aps, Value : 9 
+Output Key : video, Value : 8 
+Total number of words in dictionary U9: 541
+
+
+Output Key : rt, Value : 89 
+Output Key : go, Value : 21 
+Output Key : up, Value : 18 
+Output Key : love, Value : 18 
+Output Key : know, Value : 16 
+Output Key : one, Value : 13 
+Output Key : fuck, Value : 13 
+Output Key : omg, Value : 10 
+Output Key : lol, Value : 10 
+Output Key : day, Value : 10 
+Total number of words in dictionary U10: 1025
+
+
+Similarity Sort Desc with U1 : U3, Value : 363.0757497 
+Similarity Sort Desc with U1 : U10, Value : 389.1195189 
+Similarity Sort Desc with U1 : U5, Value : 389.5279194 
+Similarity Sort Desc with U1 : U9, Value : 406.1933037 
+Similarity Sort Desc with U1 : U6, Value : 435.9954128 
+Similarity Sort Desc with U1 : U7, Value : 445.4604360 
+Similarity Sort Desc with U1 : U4, Value : 463.3076732 
+Similarity Sort Desc with U1 : U8, Value : 467.2857798 
+Similarity Sort Desc with U1 : U2, Value : 939.4274852 
+
+Similarity Sort Desc with U2 : U4, Value : 1363.0106383 
+Similarity Sort Desc with U2 : U8, Value : 1367.7836086 
+Similarity Sort Desc with U2 : U9, Value : 1392.2668566 
+Similarity Sort Desc with U2 : U7, Value : 1398.4981230 
+Similarity Sort Desc with U2 : U3, Value : 1400.6109381 
+Similarity Sort Desc with U2 : U5, Value : 1400.8136921 
+Similarity Sort Desc with U2 : U10, Value : 1400.9329035 
+Similarity Sort Desc with U2 : U6, Value : 1401.7827934 
+Similarity Sort Desc with U2 : U1, Value : 1402.9508188 
+
+Similarity Sort Desc with U3 : U5, Value : 86.6083137 
+Similarity Sort Desc with U3 : U10, Value : 92.3200953 
+Similarity Sort Desc with U3 : U9, Value : 113.8595626 
+Similarity Sort Desc with U3 : U7, Value : 151.0728301 
+Similarity Sort Desc with U3 : U6, Value : 156.5918261 
+Similarity Sort Desc with U3 : U4, Value : 183.4284602 
+Similarity Sort Desc with U3 : U8, Value : 190.1998948 
+Similarity Sort Desc with U3 : U1, Value : 356.7842485 
+Similarity Sort Desc with U3 : U2, Value : 892.3446644 
+
+Similarity Sort Desc with U4 : U5, Value : 179.4296520 
+Similarity Sort Desc with U4 : U7, Value : 182.0164828 
+Similarity Sort Desc with U4 : U10, Value : 182.2251355 
+Similarity Sort Desc with U4 : U9, Value : 182.8523995 
+Similarity Sort Desc with U4 : U3, Value : 184.5345496 
+Similarity Sort Desc with U4 : U8, Value : 186.8100640 
+Similarity Sort Desc with U4 : U6, Value : 194.0592693 
+Similarity Sort Desc with U4 : U1, Value : 307.5971391 
+Similarity Sort Desc with U4 : U2, Value : 967.5277774 
+
+Similarity Sort Desc with U5 : U10, Value : 62.4739946 
+Similarity Sort Desc with U5 : U9, Value : 72.9931504 
+Similarity Sort Desc with U5 : U3, Value : 73.7292344 
+Similarity Sort Desc with U5 : U6, Value : 109.2153835 
+Similarity Sort Desc with U5 : U7, Value : 109.2748827 
+Similarity Sort Desc with U5 : U4, Value : 124.9319815 
+Similarity Sort Desc with U5 : U8, Value : 149.1408730 
+Similarity Sort Desc with U5 : U2, Value : 151.7662677 
+Similarity Sort Desc with U5 : U1, Value : 264.0265138 
+
+Similarity Sort Desc with U6 : U7, Value : 136.0624856 
+Similarity Sort Desc with U6 : U10, Value : 136.6235704 
+Similarity Sort Desc with U6 : U9, Value : 137.2552367 
+Similarity Sort Desc with U6 : U8, Value : 140.3353127 
+Similarity Sort Desc with U6 : U4, Value : 140.3566885 
+Similarity Sort Desc with U6 : U2, Value : 142.3024947 
+Similarity Sort Desc with U6 : U5, Value : 145.4785208 
+Similarity Sort Desc with U6 : U3, Value : 162.8097049 
+Similarity Sort Desc with U6 : U1, Value : 311.9423024 
+
+Similarity Sort Desc with U7 : U8, Value : 72.4499827 
+Similarity Sort Desc with U7 : U6, Value : 85.3873527 
+Similarity Sort Desc with U7 : U4, Value : 91.1427452 
+Similarity Sort Desc with U7 : U9, Value : 92.8493403 
+Similarity Sort Desc with U7 : U10, Value : 98.8685997 
+Similarity Sort Desc with U7 : U5, Value : 110.0136355 
+Similarity Sort Desc with U7 : U3, Value : 145.9965753 
+Similarity Sort Desc with U7 : U1, Value : 332.8768541 
+Similarity Sort Desc with U7 : U2, Value : 805.4036255 
+
+Similarity Sort Desc with U8 : U7, Value : 203.4059979 
+Similarity Sort Desc with U8 : U4, Value : 217.7980716 
+Similarity Sort Desc with U8 : U10, Value : 217.9747692 
+Similarity Sort Desc with U8 : U5, Value : 221.3391064 
+Similarity Sort Desc with U8 : U9, Value : 226.0265471 
+Similarity Sort Desc with U8 : U6, Value : 228.8645888 
+Similarity Sort Desc with U8 : U3, Value : 247.7518920 
+Similarity Sort Desc with U8 : U1, Value : 457.4122867 
+Similarity Sort Desc with U8 : U2, Value : 1373.1613161 
+
+Similarity Sort Desc with U9 : U10, Value : 111.0180166 
+Similarity Sort Desc with U9 : U5, Value : 114.5556633 
+Similarity Sort Desc with U9 : U7, Value : 129.6765206 
+Similarity Sort Desc with U9 : U6, Value : 131.8446055 
+Similarity Sort Desc with U9 : U3, Value : 138.3473888 
+Similarity Sort Desc with U9 : U4, Value : 147.0816100 
+Similarity Sort Desc with U9 : U8, Value : 160.7731321 
+Similarity Sort Desc with U9 : U1, Value : 343.0961964 
+Similarity Sort Desc with U9 : U2, Value : 966.5443601 
+
+Similarity Sort Desc with U10 : U5, Value : 56.0713831 
+Similarity Sort Desc with U10 : U9, Value : 62.6338567 
+Similarity Sort Desc with U10 : U3, Value : 88.3742044 
+Similarity Sort Desc with U10 : U7, Value : 95.8540557 
+Similarity Sort Desc with U10 : U6, Value : 112.2319028 
+Similarity Sort Desc with U10 : U4, Value : 122.3601242 
+Similarity Sort Desc with U10 : U8, Value : 162.0432041 
+Similarity Sort Desc with U10 : U2, Value : 167.8898448 
+Similarity Sort Desc with U10 : U1, Value : 384.5022757 
+
